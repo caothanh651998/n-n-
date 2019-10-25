@@ -1,3 +1,128 @@
+#home{
+	display: block;
+}
+#page{
+	display: none;
+}
+.card-title a{
+	text-decoration: none;
+	color:black;
+}
+.title{
+	width: 250px;
+	height: 50px;
+	background: #33E211;
+	margin-top: 10px;
+	margin-bottom:20px; 
+	text-align: center;
+	border-radius: 0 30px 0 30px;
+}
+.title h2{
+	line-height: 50px;
+	color:white;
+}
+.bd-example{
+	height: 400px;
+	width: 100%;
+	margin-left: 100px;
+}
+.bd-example img{
+	height: 400px;
+}
+.card_edit{
+	width: 100%;
+	height: 100px;
+	margin-bottom: 10px;
+}
+.card_edit img{
+	width: 25%;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+}
+.card_edit .body-card{
+	float: right;
+	width: 69%;
+	height: 100px;
+	margin-left: 10px;
+}
+.body-card h5 {
+	padding-top: 20px;
+}
+.body-card h5 a{
+	color: black;
+	text-decoration:none ;
+}
+.body-card h5 a:hover{
+	color: #33E211;
+}
+.card-body h5 a{
+	color: black;
+	text-decoration:none ;
+}
+.card-body h5 a:hover{
+	color: #33E211;
+}
+.tacgia{
+	width: 100px;
+	height: 50px;
+}
+.share{
+	width: 100%;
+	height: 50px;
+}
+.face{
+	float: left;
+	width: 150px;
+	height: 40px;
+	background: #1862D1;
+	border-radius: 50px; 
+	margin-left: 50px;
+	color: white;
+	margin-top: 5px;
+	margin-right: 20px;
+}
+.fa-thumbs-up{
+	margin: 5px 20px;
+	float: left;
+}
+.face p{
+	float: left;
+	line-height: 40px;
+}
+.icon{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-top: 5px;
+	border-radius: 40px;
+	background: #1862D1;
+	margin-left: 10px;
+}
+.line{
+	float: left;
+	width: 10px;
+	height: 50px;
+	border-left: 2px solid #636060;
+}
+.fa-facebook{
+	margin-top: 5px;
+	margin-left: 10px;
+	color: white;
+}
+.mess{
+	background: #0E94DA;
+}
+.fa-skype{
+	margin-top: 5px;
+	margin-left: 5px;
+	color: white;
+}
+#image p{
+	color: #7E7B7B;
+	margin-left: 40px;
+	margin-top: 10px;
+}
 /* duy */
 
 /* tỏi */
