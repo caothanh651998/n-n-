@@ -15,10 +15,86 @@
 	
 </style>
 <body onload="listProducts()">
+	<div class="container">
+		<div class="row">
+			<div class="col-9">
+				<button type="button" class="btn btn-primary" onclick="quanly()" style="margin-top: 10px;">Quản lý Sản Phẩm</button>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="showql">
+		<div class="row">
+			<div class="col-9">
+				<button type="button" class="btn btn-primary" onclick="create()" style="margin-top: 10px;">Thêm</button>
+				<button type="button" class="btn btn-primary" onclick="edit()" style="margin-top: 10px;">Sửa</button>
+				<button type="button" class="btn btn-primary" onclick="remove()" style="margin-top: 10px;">Xoá</button>
+			</div>
+		</div>
+	</div>
+	<div class="container add" id="add">
+		<div class="row">
+			<div class="col-12">
+				<button class="btn btn-primary" id="x" onclick="exit()">thoát</button>
+				<form>
+				  <div class="form-group">
+				    <label for="danhmuc">Danh Mục</label>
+				    <select class="form-control" id="danhmuc">
+				      <option >Chọn danh mục</option>
+				      <option id="dmslide">Slide</option>
+				      <option id="cn">Công Nghệ</option>
+				      <option id="dmgiaoduc">Giáo Dục</option>
+				      <option id="tc">Tài Chính</option>
+				      <option id="dmvanhoa">Văn Hoá</option>
+				      <option id="tt">Thể Thao</option>
+				      <option id="xexe">Xe</option>
+				      <option id="dl">Du Lịch</option>
+				    </select>
+				  </div>
+				  <div class="form-group">
+				    <label for="id">Nhập tiêu đề bài viết</label>
+				    <input type="text" class="form-control" id="title">
+				  </div>
+				  <div class="form-group">
+				    <label for="id">Nhập vào tiêu đề nội dung</label>
+				    <input type="text" class="form-control" id="titlecontent">
+				  </div>
+				  <div class="form-group">
+				    <label for="id">Nhập vào nội dung</label>
+				    <input type="text" class="form-control" id="content">
+				  </div>
+				  <div class="form-group">
+				    <label for="image">Thêm Ảnh</label>
+				    <input type="file" class="form-control" id="image">
+				  </div>
+				  <div class="form-group">
+				    <label for="id">Nhập tiêu đề ảnh</label>
+				    <input type="text" class="form-control" id="titleimg">
+				  </div>				  
+				  <button type="button" class="btn btn-primary" onclick="add()">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container add" id="sua">
+		<div class="row">
+			<div class="col-8" id="abc">
+				<button class="btn btn-primary" id="x" onclick="exit()">thoát</button>
+				
+			</div>
+		</div>
+	</div>
 	<div class="w-100" id="home">
 		<div class="container bg-dark">
 			<div class="row">
-				<div class="col-10 justify-content-center">
+				<div class="col-12">
+					<div class="title">
+						<h2>GIẢI TRÍ</h2>
+					</div>
+				</div>
+				<div class="col-7" id="slide7">
+					
+				</div>
+				<div class="col-5" id="slide5">
 					
 				</div>
 			</div>
@@ -86,27 +162,30 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<div class="title">
-						<h2>XE</h2>
+				<div class="col-6">
+					<div class="row" >
+						<div class="col-12">
+							<div class="title">
+								<h2>XE</h2>
+							</div>
+						</div>
+						<div class="col-12" id="xe">
+							
+						</div>
 					</div>
 				</div>
-				<div class="col-7" id="colx">
-					
-				</div>
-				<div class="col-5" id="col5x">
-					
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row" id="dulich">
-				<div class="col-12">
-					<div class="title">
-						<h2>DU LỊCH</h2>
+				<div class="col-6">
+					<div class="row" >
+						<div class="col-12">
+							<div class="title">
+								<h2>DU LỊCH</h2>
+							</div>
+						</div>
+						<div class="col-12" id="dulich">
+							
+						</div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 	</div>
@@ -141,10 +220,10 @@
 			<div class="row">
 				<div class="col-8">
 					<h4 id="titl"></h4>
-					<div id="image" class="text-center">
+					<div id="imagepage" class="text-center">
 						
 					</div>
-					<p id="content"></p>
+					<p id="contentpage"></p>
 				</div>
 				<div class="col-4" id="col4">
 					<h1>Tin Đọc Nhiều</h1>
@@ -161,6 +240,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<script src="js/style.js" type="text/javascript"></script>
 </body>
 </html>
